@@ -1,5 +1,11 @@
+import Hero from "../components/Hero";
+
 const HomePage = () => {
-  return <h1>JEREMY CAMUS</h1>
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 };
 
 export default HomePage;
