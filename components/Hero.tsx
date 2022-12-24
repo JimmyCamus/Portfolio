@@ -13,6 +13,7 @@ const Hero = () => {
           alt="personal image"
           width={"360"}
           height={"360"}
+          priority={true}
         />
         <div className="flex flex-col justify-center items-center">
           <h1 className="font-extrabold text-transparent text-3xl lg:text-7xl bg-clip-text bg-gradient-to-r from-primary-gradient to-primary text-center mt-5">
