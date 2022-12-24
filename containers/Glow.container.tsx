@@ -1,10 +1,4 @@
-import { ReactNode } from "react";
-
-type GlowContainerType = {
-  children: ReactNode;
-  from: string;
-  to: string;
-};
+import { GlowContainerType } from "../lib/types/entries.types";
 
 const GlowContainer = ({ children, from, to }: GlowContainerType) => {
   return (
