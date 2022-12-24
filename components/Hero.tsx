@@ -1,4 +1,5 @@
 import Image from "next/image";
+import GlowContainer from "../containers/Glow.container";
 import ArrowDown from "./icons/ArrowDown";
 
 const Hero = () => {
@@ -19,8 +20,10 @@ const Hero = () => {
           <h2 className="font-extrabold mt-2 text-2xl text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondary-gradient text-center">
             Desarrollador Fullstack
           </h2>
-          <div className="flex items-center mt-14 text-center">
-            <ArrowDown />
+          <div className="flex items-center mt-20 text-center">
+            <GlowContainer from="primary-gradient" to="primary">
+              <ArrowDown />
+            </GlowContainer>
           </div>
         </div>
       </div>
