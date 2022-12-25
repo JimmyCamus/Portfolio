@@ -5,3 +5,9 @@ export type GlowContainerType = {
   from: string;
   to: string;
 };
+
+export type SectionTitleType = {
+  children: ReactNode;
+  gradientFrom: string;
+  gradientTo: string;
+};
