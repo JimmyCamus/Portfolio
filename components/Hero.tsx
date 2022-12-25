@@ -1,5 +1,6 @@
 import Image from "next/image";
 import GlowContainer from "../containers/Glow.container";
+import { setGradient } from "../styles/gradient";
 import ArrowDown from "./icons/ArrowDown";
 import SocialMedia from "./SocialMedia";
 
@@ -16,10 +17,20 @@ const Hero = () => {
           priority={true}
         />
         <div className="flex flex-col justify-center items-center">
-          <h1 className="font-extrabold text-transparent text-3xl lg:text-7xl bg-clip-text bg-gradient-to-r from-primary-gradient to-primary text-center mt-5">
+          <h1
+            className={`font-extrabold text-3xl lg:text-7xl text-center mt-5 ${setGradient(
+              "primary-gradient",
+              "primary"
+            )}`}
+          >
             JEREMY CAMUS VARELA
           </h1>
-          <h2 className="font-extrabold mt-2 text-2xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondary-gradient text-center">
+          <h2
+            className={`font-extrabold mt-2 text-2xl lg:text-5xl text-center ${setGradient(
+              "secondary",
+              "secondary-gradient"
+            )}`}
+          >
             Fullstack Delevoper
           </h2>
           <div className="mt-7 mb-20 lg:mt-12 lg:mb-20">
