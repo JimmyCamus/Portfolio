@@ -20,7 +20,7 @@ const Hero = () => {
             JEREMY CAMUS VARELA
           </h1>
           <h2 className="font-extrabold mt-2 text-2xl lg:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondary-gradient text-center">
-            Desarrollador Fullstack
+            Fullstack Delevoper
           </h2>
           <div className="mt-7 mb-20 lg:mt-12 lg:mb-20">
             <SocialMedia />
