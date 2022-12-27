@@ -1,12 +1,19 @@
 import { ReactNode } from "react";
 
-export type GlowContainerType = {
+export type SectionTitleType = {
   children: ReactNode;
-  from: string;
-  to: string;
+  gradientFrom: string;
+  gradientTo: string;
 };
 
-export type SectionTitleType = {
+export type LinkButtonType = {
+  children: ReactNode;
+  href: string;
+  gradientFrom: string;
+  gradientTo: string;
+};
+
+export type SectionLabelType = {
   children: ReactNode;
   gradientFrom: string;
   gradientTo: string;
