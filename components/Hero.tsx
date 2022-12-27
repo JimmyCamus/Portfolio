@@ -1,5 +1,4 @@
 import Image from "next/image";
-import GlowContainer from "../containers/Glow.container";
 import { setGradient } from "../styles/gradient";
 import ArrowDown from "./icons/ArrowDown";
 import SocialMedia from "./SocialMedia";
@@ -18,18 +17,12 @@ const Hero = () => {
         />
         <div className="flex flex-col justify-center items-center">
           <h1
-            className={`font-extrabold text-3xl lg:text-7xl text-center mt-5 ${setGradient(
-              "primary-gradient",
-              "primary"
-            )}`}
+            className={`font-extrabold text-3xl lg:text-7xl text-center mt-5 text-transparent bg-clip-text bg-gradient-to-r from-primary-gradient to-primary`}
           >
             JEREMY CAMUS VARELA
           </h1>
           <h2
-            className={`font-extrabold mt-2 text-2xl lg:text-5xl text-center ${setGradient(
-              "secondary",
-              "secondary-gradient"
-            )}`}
+            className={`font-extrabold mt-2 text-2xl lg:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-secondary to-secondary-gradient`}
           >
             Fullstack Delevoper
           </h2>
@@ -37,9 +30,14 @@ const Hero = () => {
             <SocialMedia />
           </div>
           <div className="flex items-center text-center">
-            <GlowContainer from="primary-gradient" to="primary">
-              <ArrowDown />
-            </GlowContainer>
+            <div className="relative">
+              <div
+                className={`absolute rounded-full -inset-1 bg-gradient-to-r from-tertiary to-tertiary-gradient blur opacity-40`}
+              ></div>
+              <div className="relative bg-transparent">
+                <ArrowDown />
+              </div>
+            </div>
           </div>
         </div>
       </div>
