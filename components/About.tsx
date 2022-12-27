@@ -5,7 +5,7 @@ import SectionTitle from "./SectionTitle";
 
 const About = () => {
   return (
-    <div className="mt-20 lg:mt-36">
+    <div id="about" className="mt-20 lg:mt-36">
       <SectionLabel gradientFrom="primary-gradient" gradientTo="primary">
         1
       </SectionLabel>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { setGradient } from "../styles/gradient";
 import ArrowDown from "./icons/ArrowDown";
 import SocialMedia from "./SocialMedia";
 
@@ -35,7 +34,9 @@ const Hero = () => {
                 className={`absolute rounded-full -inset-1 bg-gradient-to-r from-tertiary to-tertiary-gradient blur opacity-40`}
               ></div>
               <div className="relative bg-transparent">
-                <ArrowDown />
+                <a href="#about">
+                  <ArrowDown />
+                </a>
               </div>
             </div>
           </div>
