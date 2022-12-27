@@ -17,4 +17,10 @@ export type LinkButtonType = {
   href: string;
   gradientFrom: string;
   gradientTo: string;
-}
+};
+
+export type SectionLabelType = {
+  children: ReactNode;
+  gradientFrom: string;
+  gradientTo: string;
+};
