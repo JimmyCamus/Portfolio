@@ -22,11 +22,11 @@ const About = () => {
           <div className="w-3/4 text-base lg:text-xl lg:leading-7 text-justify text-black flex flex-col">
             <p>
               Hi! {"I'm"} Jeremy Camus Varela, fullstack developer and
-              university student of{" "}
+              {" "}
               <span className={setGradient("primary-gradient", "primary")}>
-                Civil Engineering in Computer Science and Informatics
+                civil Engineering in Computer Science and Informatics
               </span>{" "}
-              at
+              of
               {" Universidad Católica del Norte"}. I am passionate about the
               world of{" "}
               <span className={setGradient("secondary", "secondary-gradient")}>
